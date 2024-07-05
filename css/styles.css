@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: fixed;
+    top: 0;
+}
+
+.container {
+    margin-top: 70px;
+    /* 50px header + 20px margin */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#scanner-display {
+    margin-bottom: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(19, 20px);
+    /* Adjusting size to fit within viewport */
+    grid-gap: 1px;
+}
+
+#game-board .cell {
+    width: 20px;
+    /* Adjusting size to fit within viewport */
+    height: 20px;
+    /* Adjusting size to fit within viewport */
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    /* Adjusting font size to fit within smaller cells */
+    font-weight: bold;
+}
+
+.crime {
+    background-color: red;
+}
+
+.door {
+    background-color: brown;
+}
+
+.window {
+    background-color: blue;
+}
+
+.street {
+    background-color: gray;
+}
+
+.steps {
+    background-color: yellow;
+}
+
+.dev-mode {
+    background-color: green !important;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #333;
+    background-color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn:active {
+    background-color: #ddd;
+}
+
+.btn.on {
+    background-color: #4caf50;
+    color: #fff;
+    border-color: #4caf50;
+}
